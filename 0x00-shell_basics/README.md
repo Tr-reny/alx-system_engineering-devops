@@ -12,8 +12,10 @@ ls
 **2. There is no place like home**
 Write a script that changes the working directory to the user’s home directory.
 You are not allowed to use any shell variables
+```
 #!/bin/bash
 cd /root
+```
 
 **3. The long format**
 Display current directory contents in a long format
@@ -80,6 +82,8 @@ ln -s /bin/ls __ls__
 
 **14. Copy HTML files**
 Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
+You can consider that all HTML files have the extension .html
 #!/bin/bash 
 cp -nu *.html ..
-You can consider that all HTML files have the extension .html
+
+
