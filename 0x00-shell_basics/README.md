@@ -1,1 +1,1 @@
-**TEST**
+#!/bin/bash ./README.md
