@@ -1,2 +1,2 @@
-#!/bin/bash ./1-listit Applications    Documents   Dropbox Movies Pictures
-Desktop Downloads   Library Music Public ls /root/alx-system_engineering-devops/0x00-shell_basics
+#!/bin/bash ./1-listit
+ls
