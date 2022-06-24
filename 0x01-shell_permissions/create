@@ -1,0 +1,5 @@
+#!/bin/bash
+echo '#!/bin/bash' > 100-change_owner_and_group
+echo '#!/bin/bash' > 101-symbolic_link_permissions
+echo '#!/bin/bash' > 102-if_only
+echo '#!/bin/bash' > 103-Star_Wars
