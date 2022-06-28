@@ -158,6 +158,8 @@ printf "%o\n" $(( $((5#$(echo $WATER | tr water 01234))) + $((5#$(echo $STIR | t
 ```
 
 
+### Visitors Count
+<img align="left" src = "https://profile-counter.glitch.me/Tr-reny/alx-system_engineering-devops/0x03-shell_variables_expansions/count.svg"alt="Loading">
 
 
 
