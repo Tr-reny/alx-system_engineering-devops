@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script displays a list of currently running processes with the word 'Bash' in it
+
+pgrep -l bash
