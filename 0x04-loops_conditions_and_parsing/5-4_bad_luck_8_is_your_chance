@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
-# A script that loops through 1 to 10 using while
-
-i=1
-while [ $i -le 10 ]
+#prints a string 10 times
+x=0
+while [ $x != 10 ]
 do
-    if [ $i -eq 4 ]
-    then
-        echo "bad luck"
-    elif [ $i -eq 8 ]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
-        ((i++))
+  if [ $x = 3 ]
+  then
+    echo "bad luck"
+  elif [ $x = 7 ]
+  then
+    echo "good luck"
+  else
+    echo "Holberton School"
+  fi
+  x=$(( x + 1 ))
 done

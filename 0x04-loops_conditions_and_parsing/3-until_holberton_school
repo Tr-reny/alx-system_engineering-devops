@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#prints a string 10 times
+
+number=0
+until [ $number -eq 10 ]
+do
+	echo "Holberton School"
+	number=$(( number + 1 ))
+done

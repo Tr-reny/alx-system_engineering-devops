@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-#A script that displays Best School 10 times and hi after the 9th using while and if
-
-i=1
-
-while [ $i -le 10 ]
+#prints a string 10 times
+x=1
+while [ $x -ne 11 ]
 do
-    echo "Best School"
-    if [ $i -eq 9 ]
-    then
-        echo "Hi"
-    fi
-    ((i++))
+  if [ $x -eq 9 ]
+  then
+    echo "Hi"
+  else
+    echo "Holberton School"
+  fi
+  x=$(( x + 1 ))
 done

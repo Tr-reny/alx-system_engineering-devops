@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Bash script that displays a list of currently running processes.
+#list all pids
 
-ps axuf
+ps -auxf

@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-# This script displays the content of the current directory in list format
-# Only displays the part of the name after the first dash
+#special ls
 
-mylist=$(ls)
-
-for i in $mylist; do
-  echo "$i" | cut -d '-' -f 2 
+for i in *
+do
+    echo "$i" | cut -d '-' -f 2;
 done
