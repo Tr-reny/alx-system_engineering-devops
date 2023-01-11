@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Generate a ssh key pair
+ssh-keygen -b 4096 -f holberton -t rsa -P hello
