@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
-
-# Script that installs and configures nginx web server
-
-apt-get update -y
-apt-get install nginx -y
-
-systemctl stop nginx
-
-sed -i 's/80 default_server/80 default_server\n        listen [::]:80 default_server ipv6only=on;/g' /etc/nginx/sites-available/default
-echo "Hello World!" > /var/www/html/index.html
-
-systemctl start nginx
+# Install nginx and start it
+apt-get -y install nginx
+service nginx start
+ufw allow 'Nginx HTTP'
+echo "Holberton School\n" | sudo tee /var/www/html/index.nginx-debian.html
+service nginx restart
