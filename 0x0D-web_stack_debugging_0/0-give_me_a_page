@@ -1,25 +1,2 @@
 #!/usr/bin/env bash
-# Start the container
-docker run -p 8080:80 -d -it holbertonschool/265-0
-
-# Get the container ID
-CONTAINER_ID=$(docker ps -q)
-
-# Connect to the running container
-docker exec -it $CONTAINER_ID bash
-
-# Install Apache
-apt-get update && apt-get install -y apache2
-
-# Start the Apache service
-service apache2 start
-
-# Create index.html
-echo "Hello Holberton" > /var/www/html/index.html
-
-# Exit the container
-exit
-
-# Test the changes
-curl 0:8080
-
+sudo service apache2 start
