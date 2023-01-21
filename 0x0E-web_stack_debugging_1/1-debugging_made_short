@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Fix Nginx not listening on port 80
+sudo service nginx stop
+sudo fuser -k 80/tcp
+sudo service nginx start
