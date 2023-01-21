@@ -1,18 +1,4 @@
 #!/usr/bin/env bash
-# Fix Nginx not listening on port 80
-
-# Stop Nginx service
-sudo service nginx stop
-
-# Check if port 80 is in use
-sudo netstat -tuln | grep :80
-
-# If port 80 is in use, find the process using it and kill it
-sudo lsof -i :80
-sudo kill -9 <PID of process using port 80>
-
-# Start Nginx service
-sudo service nginx start
-
-# Check if Nginx is now listening on port 80
-sudo netstat -tuln | grep :80
+# Fix nginx to listen to port 80
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+service nginx start
