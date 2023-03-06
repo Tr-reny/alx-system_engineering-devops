@@ -1,5 +1,6 @@
-# Install the fix for the Apache server
-exec { 'fix-apache':
-  command => '/path/to/fix/script.sh',
-  require => Package['apache2'],
+# Fix permission issues causing 500 error
+file { '/var/www/html':
+  ensure => directory,
+  owner  => 'www-data',
+  group  => 'www-data',
 }
